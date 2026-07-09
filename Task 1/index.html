@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Field Notes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="mark">FN</div>
+  <h1>Field Notes</h1>
+  <p class="sub">A working collection of light, structure and place</p>
+</header>
+
+<nav class="filters" id="filters">
+  <button class="filter-btn is-active" data-filter="all">All<span>24</span></button>
+  <button class="filter-btn" data-filter="structure">Structure<span>06</span></button>
+  <button class="filter-btn" data-filter="nature">Nature<span>06</span></button>
+  <button class="filter-btn" data-filter="people">People<span>06</span></button>
+  <button class="filter-btn" data-filter="still">Still Life<span>06</span></button>
+</nav>
+
+<main class="gallery" id="gallery"></main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lb-top">
+    <span class="lb-count"><span id="lbIndex">01</span> / <span id="lbTotal">24</span></span>
+    <button class="lb-close" id="lbClose" aria-label="Close">Close</button>
+  </div>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+  <figure class="lb-figure">
+    <img id="lbImage" src="" alt="">
+    <figcaption id="lbCaption"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
